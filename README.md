@@ -4,7 +4,7 @@
 
 ## Estrutura do blog
 
-![]()
+![](https://github.com/PedroArnaldo/Blog-with-Django/blob/main/img/Blog-diagram.png)
 
 ## Referência
 
