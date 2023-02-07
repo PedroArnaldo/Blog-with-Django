@@ -11,7 +11,15 @@
     <h1><a href="/">Parna</a></h1>
    </header>
 
-   <div>
+    {% for post in posts %}
+        <div>
+            <p>published: {{ post.published_date}}</p>
+            <h2><a href="/">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+
+   <!-- <div>
     <p>publicado: 21/01/2023</p>
     <h2><a href="">Meu segundo post</a></h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis maiores itaque in, tempora necessitatibus fuga libero culpa atque aut tenetur nemo modi laudantium enim quasi accusamus eius veniam consequuntur ad.</p>
@@ -21,6 +29,6 @@
     <p>publicado: 20/01/2023</p>
     <h2><a href="">Meu primeiro post</a></h2>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis maiores itaque in, tempora necessitatibus fuga libero culpa atque aut tenetur nemo modi laudantium enim quasi accusamus eius veniam consequuntur ad.</p>
-   </div>        
+   </div>         -->
 </body>
 </html>
